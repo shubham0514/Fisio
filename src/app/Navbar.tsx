@@ -29,10 +29,10 @@ export const Navbar = () => {
                     </div>)
                 }
             </div >
-            <div className='Desktop-Navigation' style={{ display: 'flex', justifyContent: 'center', height: '2em' }}>
+            <div className='Desktop-Navigation' style={{ display: 'flex', justifyContent: 'center', height: '2em', margin: '' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', width: '60%', color: 'black', fontWeight: 'bolder', fontStyle: 'sans-serif' }}>
-                    <Link href="">Home</Link>
-                    <Link href="">
+                    <Link className='navigationLink' href="">Home</Link>
+                    <Link className='navigationLink' href="">
                         <select name="products" id="products">
                             <option value="0">Products</option>
                             <option value="1">Green Line</option>
@@ -41,10 +41,10 @@ export const Navbar = () => {
                             <option value="1">Home Asthetics</option>
                         </select>
                     </Link>
-                    <Link href="">Woman&apos;s Day</Link>
-                    <Link href="">Academy</Link>
-                    <Link href="">Fisio4you</Link>
-                    <Link href="">Contact Us</Link>
+                    <Link className='navigationLink' href="">Woman&apos;s Day</Link>
+                    <Link className='navigationLink' href="">Academy</Link>
+                    <Link className='navigationLink' href="">Fisio4you</Link>
+                    <Link className='navigationLink' href="">Contact Us</Link>
                 </div>
             </div>
         </>
