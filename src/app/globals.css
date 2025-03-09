@@ -9,7 +9,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    /* --background: #0a0a0a; */
     --foreground: #ededed;
   }
 }
@@ -19,3 +19,100 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+.hamburger-menu{
+  width:'2em';
+  /* border-radius:'25px'; */
+  color: black;
+  padding: 0%;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.HAMBURGER-ICON:hover{
+border:0px solid rgb(187,148,53) !important;
+cursor:pointer;
+text-shadow:0px 15px 20px rgba(191, 177, 101, 0.4);
+}
+.HAMBURGER-ICON:hover span {
+  background-color:rgb(187,148,53)
+}
+.logo{
+  cursor: pointer;
+  text-shadow:0px 15px 20px rgba(191, 177, 101, 0.4);
+}
+.carousel {
+  /* background: #EEE; */
+  width: auto;
+  height:100%;
+  /* overflow: auto; */
+}
+.galary-cell{
+  padding: 0em 1em 1em 1em;
+  width: 100vw;
+  min-height: 500px;
+  max-height: 500px;
+  margin-right: 10px;
+  /* background:whitesmoke; */
+  counter-increment: gallery-cell;
+}
+.galary-cell img {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: auto;
+}
+/* .gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
+} */
+.Left-Side-Caurosel:hover{
+  background-color: whitesmoke;
+  opacity: 0.4;
+  color:rgba(187, 148, 153, 0.5);
+  /* transition: transform 0.5, background-color 0.3s ,color 0.3s; */
+}
+.Right-Side-Caurosel:hover{
+  background-color: whitesmoke;
+  opacity: 0.4;
+  color:rgba(187, 148, 153, 0.5);
+  scale:1.1;
+}
+.Right-Side-Caurosel:active{
+  color: rgba(191,177,101,0.5);
+  border:2px solid rgba(191,177,101,0.5);
+  background-color: whitesmoke;
+  opacity: 0.6;
+}
+.Left-Side-Caurosel:active {
+  color: rgba(209, 194, 111, 0.4);
+  border:2px solid rgba(191,177,101,0.5);
+  background-color: whitesmoke;
+  opacity: 0.6;
+}
+.Ui-card{
+  cursor: pointer;
+}
+.Ui-card:hover{
+  scale: 1.009;
+}
+.see-more:hover{
+  background-color: rgba(81,30,0,0.9);
+}
+/* @keyframes move {
+  0%{
+    transform: translateX(0%);
+  }
+  20%{
+    transform: translateX(-100%);
+  }
+  40%{
+transform: translateX(-100%);
+  }
+  100%{
+transform: translateX(-200%);
+  }
+} */
